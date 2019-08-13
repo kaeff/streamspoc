@@ -8,12 +8,10 @@ Uses docker to run kafka, but atm relies on the kafka console scripts
 
 Prerequisites
 1) Docker
-2) Kafka
+1) Docker Compose
 
-Using Homebrew:
 ```
-brew install kafka
-export PATH="$PATH:/usr/local/Cellar/kafka/2.2.1/bin"
+docker-compose up -d
 ```
 
 
