@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-kafka-topics --list --bootstrap-server localhost:9092
+docker-compose exec kafka kafka-topics --list --zookeeper zookeeper:2181
+

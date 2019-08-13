@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-kafka-topics --delete --zookeeper localhost:9092 --if-exists --topic $1
+docker-compose exec kafka kafka-topics --delete --zookeeper zookeeper:2181 --if-exists --topic $1
